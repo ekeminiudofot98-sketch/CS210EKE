@@ -1,9 +1,15 @@
-using System;
+List<Shape> shapes = new List<Shape>();
+shapes.Add(new Square("Red", 5));
 
-class Program
+
+shapes.Add(new Rectangle ("Blue", 6, 4));
+
+shapes.Add(new Circle ("Green", 3));
+
+foreach (Shape shape in shapes)
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World! This is the Shapes Project.");
-    }
+    Console.WriteLine ($"Color: {shape.GetColor()}");
+    Console.WriteLine($"Area: {shape.GetArea()}");
+    Console.WriteLine();
+    
 }
