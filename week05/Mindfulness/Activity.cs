@@ -9,7 +9,7 @@ public class Activity
     private string _description;
     private int _duration;
 
-    // Constructor
+    // Constructorssss
     public Activity(string name, string description)
     {
         _name = name;
